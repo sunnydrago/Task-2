@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lavender;
+    background-image: url("./images/photo-1551503766-ac63dfa6401c.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(1px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.251);
+}
+
+.container{
+    height: fit-content;
+    width: 100%;
+    /* background-color:black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.card{
+    height: 500px;
+    width: 25%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.quote p{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.layover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.one{
+    background-image: url("https://imgs.search.brave.com/lLJKVfhYYIeJU_CBiVV9RPBfZ6FFc82scasTcVKF7fQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzY2LzY5Lzc3/LzM2MF9GXzM2NjY5/NzcxMV93SmVSOXBE/WGU2cHFOcGpWNlo4/V1ZEYndua2RrTzY4/Qi5qcGc");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.457);
+}
+
+.tow{
+    background-image: url("https://imgs.search.brave.com/4bAR3BYi_rAA3YS-bKa-O2h59eHTXu5vLKgm3LkyHZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTE0/Njk5NzE4L3Bob3Rv/LzMtMzAtMTkyOS1y/YWJyaW5kcmFudGgt/dGFnb3JlLWluZGlh/bi1wb2V0LWF1dGhv/ci1hbmQtcGhpbG9z/b3BoZXItc2VlLW5v/dGUuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXFqSlR5d2U5/SEQ2NG1ackVqeF94/azBKR0J6Tzdaa1J2/U2x6TFJJa1Jxd1U9");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.457);
+}
+
+.three{
+    background-image: url("https://imgs.search.brave.com/J6gAoF0ps5u9xyjKYvy67pyzMioS2g4Iv6lZotmgSYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0LzU2LzAwLzk5/LzM2MF9GXzQ1NjAw/OTk0OF9manFhd2da/TTU0aURISXZKMHR1/cWtjT0V6YXJ4RXRQ/bC5qcGc");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.457);
+}
+
+.writer{
+    width: 100%;
+    height: 20%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.writer p{
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;margin-top: 1px;
+    }
+
+    .layover{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+    
+    .card {
+        height: 500px;
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      justify-content: space-between;
+    }
+    
+    .card {
+        padding: 50px 30px;
+        height: fit-content;
+      width: 45%;
+    }
+  }
